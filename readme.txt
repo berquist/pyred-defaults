@@ -1,6 +1,16 @@
 
                         README
-            Documentation of November 30th, 2014
+            Documentation of February 25th, 2015
+
+
+The Tripos Mol2 file format is not a correct input file format for PyRED!
+The P2N file format is not a correct input file format for PyRED!
+
+Use instead the PDB file format as input file format:
+To be recognized a PDB input file has to bear a particular filename and the 
+'.pdb' extension (see below)!
+
+DO NOT FORGET TO ADD THE HYDROGEN ATOMS IN THE PDB INPUT FILE IF NEEDED!
 
 
 I. The PDB file format used by PyRED
@@ -179,5 +189,15 @@ about the molecules involved in the PyRED job.
 In the absence of the 'Project.config' file PyRED can still be executed.
 However, in this case only default information about the molecules involved in
 the PyRED job are used.
+
+
+
+V. The frcmod.user file
+
+The presence of the 'frcmod.user' file in the working directory is not
+mandatory.
+
+The user can provide missing or mandatory force field parameters within the 
+frcmod.user file.
 
 
